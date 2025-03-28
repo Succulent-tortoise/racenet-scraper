@@ -26,7 +26,6 @@ if run_button and url:
     # st.dataframe(df)
 
 
-def scrape_racenet_data(url):
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/122 Safari/537.36"
 }
