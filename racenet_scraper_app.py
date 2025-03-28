@@ -17,6 +17,9 @@ headers = {
 }
 res = requests.get(url, headers=headers)
 
+st.text(f"Status Code: {res.status_code}")
+st.text(res.text[:1000])  # Preview the top part of the HTML response
+
     soup = BeautifulSoup(res.text, "html.parser")
 
     runners = soup.select(".selection-row-desktop")
